@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "72077037359",
+    "firebase_url": "https://mimicapp-1da24.firebaseio.com",
+    "project_id": "mimicapp-1da24",
+    "storage_bucket": "mimicapp-1da24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72077037359:android:688723c9313b8ecd",
+        "android_client_info": {
+          "package_name": "com.drm.mimicapp_v20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72077037359-4g20ohshbdfq9tkngbl6jg94atcrbhej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drm.mimicapp_v20",
+            "certificate_hash": "ec90cf6d63b324cee07db0f82e23d82e2300905c"
+          }
+        },
+        {
+          "client_id": "72077037359-v2va5knsd1050huvlf4lphhfnn3t9nrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdJu-lYahAuFdNBY5QZCTpilOuz9hoEfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72077037359-v2va5knsd1050huvlf4lphhfnn3t9nrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72077037359:android:2710e972628c6bd1",
+        "android_client_info": {
+          "package_name": "com.mimicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72077037359-barcf7lni1fn93m6hipmi17p5d7pguvh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mimicapp",
+            "certificate_hash": "be8857f1f35b659faa624b3f8374239736db785c"
+          }
+        },
+        {
+          "client_id": "72077037359-8175v0m6loku9kbi32dqdjd2ecg1s47l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mimicapp",
+            "certificate_hash": "ec90cf6d63b324cee07db0f82e23d82e2300905c"
+          }
+        },
+        {
+          "client_id": "72077037359-v2va5knsd1050huvlf4lphhfnn3t9nrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdJu-lYahAuFdNBY5QZCTpilOuz9hoEfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72077037359-v2va5knsd1050huvlf4lphhfnn3t9nrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
