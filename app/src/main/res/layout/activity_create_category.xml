@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCategoryActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/customtoolbar" />
+
+    <LinearLayout
+        android:id="@+id/linCCGeneral"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customToolbar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCCLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Nombre de la categoría"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat_medium" />
+
+        <EditText
+            android:id="@+id/etCCCategoryName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnCCNext"
+            android:animateLayoutChanges="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="Siguiente"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCCLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="Palabras"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/tvCCLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="(Mínimo 3 palabras para guardar la categoría)"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:fontFamily="@font/montserrat_medium" />
+
+        <LinearLayout
+            android:id="@+id/linCCAddWord"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etCCAddWord"
+                android:animateLayoutChanges="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:hint="Nueva palabra"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnAddWord"
+                android:animateLayoutChanges="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ic_add_word" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvCCWords"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorPrimaryText"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnCCSave"
+            android:animateLayoutChanges="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="Guardar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

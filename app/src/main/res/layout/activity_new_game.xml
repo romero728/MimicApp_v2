@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".NewGameActivity" >
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/customtoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customToolbar"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvNGLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:text="Selecciona el número de equipos"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sNumberTeams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:animateLayoutChanges="true"
+            android:dropDownWidth="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:popupBackground="@color/colorSecondaryText"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/tvNGLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:text="Ingresa el nombre de cada equipo"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:id="@+id/scrollTeams"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+            <LinearLayout
+                android:id="@+id/linSpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true" >
+
+                <EditText
+                    android:id="@+id/etNameTeam1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 1"
+                    android:autofillHints="Nombre del equipo 1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <EditText
+                    android:id="@+id/etNameTeam2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 2"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <EditText
+                    android:id="@+id/etNameTeam3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 3"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <EditText
+                    android:id="@+id/etNameTeam4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 4"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <EditText
+                    android:id="@+id/etNameTeam5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 5"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <EditText
+                    android:id="@+id/etNameTeam6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 6"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <EditText
+                    android:id="@+id/etNameTeam7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="Nombre del equipo 7"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnNGNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="Siguiente"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

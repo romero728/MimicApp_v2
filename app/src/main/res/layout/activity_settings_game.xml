@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsGameActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/customtoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customToolbar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ibSGHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/roundcornerhelp"
+            android:src="@android:drawable/ic_menu_help" />
+
+        <TextView
+            android:id="@+id/tvSGLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:text="Selecciona el número de rondas"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sSGRounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:animateLayoutChanges="true"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="@color/colorPrimaryLight"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/tvSGLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:text="Selecciona el tiempo para cada ronda"
+            android:textColor="@color/colorPrimaryButton"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sSGTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:animateLayoutChanges="true"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="@color/colorPrimaryLight"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btnSGBeginPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="Empezar a jugar"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

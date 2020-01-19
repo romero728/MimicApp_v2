@@ -7,6 +7,10 @@
     tools:context=".LoginActivity"
     android:background="@color/colorPrimary">
 
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/customtoolbar" />
+
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="0dp"
@@ -20,11 +24,11 @@
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224"
-        app:srcCompat="@drawable/logo_brown" />
+        app:layout_constraintVertical_bias="0.308"
+        app:srcCompat="@drawable/ic_account_login" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"

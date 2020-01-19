@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">Mimic App</string>
+    <string-array name="number_teams">
+        <item>2 equipos</item>
+        <item>3 equipos</item>
+        <item>4 equipos</item>
+        <item>5 equipos</item>
+        <item>6 equipos</item>
+        <item>7 equipos</item>
+    </string-array>
+    <string-array name="kind_categories">
+        <item>Todas</item>
+        <item>Generales</item>
+        <item>Mis categorías</item>
+    </string-array>
+    <string-array name="kind_list_categories">
+        <item>Generales</item>
+        <item>Mis categorías</item>
+    </string-array>
+    <string-array name="time_options">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>45 segundos</item>
+        <item>1 minuto</item>
+        <item>3 minutos</item>
+        <item>5 minutos</item>
+    </string-array>
+    <string-array name="rounds_options">
+        <item>1 ronda</item>
+        <item>3 rondas</item>
+        <item>5 rondas</item>
+    </string-array>
 </resources>

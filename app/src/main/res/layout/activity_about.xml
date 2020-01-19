@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AboutActivity">
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/customtoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customToolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvTitleDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DESARROLLADOR"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Mimic App developers"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvTitleVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:text="VERSIÓN"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1.0.3"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="Contacto"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

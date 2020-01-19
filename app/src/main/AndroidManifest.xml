@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.drm.mimicapp_v20">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -9,13 +12,118 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".SplashScreenActivity" android:theme="@style/AppFullScreenTheme">
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".EmailActivity"
+            android:parentActivityName=".AboutActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutActivity" />
+        </activity>
+        <activity
+            android:name=".NewGameActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChooseCategoryActivity"
+            android:parentActivityName=".NewGameActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewGameActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsGameActivity"
+            android:parentActivityName=".ChooseCategoryActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewGameActivity" />
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ScoreActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CategoryActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreateCategoryActivity"
+            android:parentActivityName=".CategoryActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CategoryActivity" />
+        </activity>
+        <activity
+            android:name=".ListCategoryActivity"
+            android:parentActivityName=".CategoryActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CategoryActivity" />
+        </activity>
+        <activity
+            android:name=".ListWordsCategoryActivity"
+            android:parentActivityName=".ListCategoryActivity"
+            android:screenOrientation="portrait"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListCategoryActivity" />
         </activity>
     </application>
 

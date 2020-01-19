@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".EmailActivity">
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/customtoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customToolbar"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailSubject"
+            android:textColor="@color/colorPrimaryText"
+            android:hint="Asunto"/>
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimaryText"
+            android:hint="Déjanos tus comentarios"
+            android:lines="8"
+            android:gravity="start|top"/>
+
+        <Button
+            android:id="@+id/btnSendEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/roundcornerbutton"
+            android:text="Enviar"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
